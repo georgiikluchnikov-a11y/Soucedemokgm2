@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CrossBrowser Saucedemo Suite" parallel="tests" thread-count="1">
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="headless" value="false"/>
+        <classes>
+            <class name="tests.SaucedemoTest"/>
+        </classes>
+    </test>
+</suite>
